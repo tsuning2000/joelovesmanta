@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     #url(r'^$', include('personal.urls')),
     url(r'^$', personal_views.index, name='index'),
-    url(r'^blog/', blog_views.index, name='index'),
+    url(r'^blog/', blog_views.post_list, name='post_list'),
+    url(r'^post/(?P<pk>[0-9]+)/$', blog_views.post_detail, name='post_detail'),
 ]

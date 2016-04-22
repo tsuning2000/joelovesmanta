@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+	<title>每天寫日記</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+
+	<link rel="stylesheet" href="{% static 'personal/css/main.css' %}"/>
+	<noscript><link rel="stylesheet" href="{% static 'personal/css/noscript.css' %}" /></noscript>
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<!-- Wrapper-->
+<div id="wrapper">
+
+    <!-- Nav -->
+    <nav id="nav">
+      <a href="{% url 'index' %}" class="icon fa-home active"><span>Home</span></a>
+			<!--		<a href="#work" class="icon fa-folder"><span>Work</span></a>
+						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
+						<a href="#blog" class="icon fa-twitter"><span>Blog</span></a>
+
+                    -->
+                </nav>
+
+                <!-- Main -->
+                <div id="main">
+                    <article id="blog" class="panel">
+                        <header>
+                           <h2>告訴我你每天在幹嘛吧！</h2>
+                       </header>
+                       <div>
+                        {% for post in posts %}
+                        <div>
+                            <p>published: {{ post.published_date }}</p>
+                            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                            <p>{{ post.text|linebreaks }}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </article>
+            </div>
+
+            <!-- Footer -->
+            <div id="footer">
+              <ul class="copyright">
+                 <li>&copy; Joe</li><li>2016/04/27</li>
+             </ul>
+         </div>
+
+     </div>
+
+     <!-- Scripts -->
+     <script src="{% static 'personal/js/jquery.min.js' %}"></script>
+     <script src="{% static 'personal/js/skel.min.js' %}"></script>
+     <script src="{% static 'personal/js/skel-viewport.min.js' %}"></script>
+     <script src="{% static 'personal/js/util.js' %}"></script>
+     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+     <script src="{% static 'personal/js/main.js' %}"></script>
+
+ </body>
+
+ </html>
