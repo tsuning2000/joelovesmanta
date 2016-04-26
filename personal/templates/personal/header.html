@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 
 <head>
-	<title>標題</title>
+	<title>Joe Loves Manta</title>
 	<meta charset="utf-8" />
 	{% load staticfiles %}
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,7 +17,7 @@
 	<nav id="nav">
 		<a href="#me" class="icon fa-home active"><span>Home</span></a>
 		<a href="#tree" class="icon fa-tree"><span>Tree</span></a>
-		<a href="#video" class="icon fa-video-camera"><span>Video</span></a>
+		<a href="#song" class="icon fa-music"><span>Song</span></a>
 		<a href="{% url 'post_list' %}" class="icon fa-file-text"><span>Blog</span></a>
 	</nav>
 
@@ -49,7 +49,7 @@
 				自從知道自己要去當兵了，我就一直在想你今晚問我的問題<br>
 				到底⋯⋯送什麼東西能夠讓你感覺到我就在你身邊？<br>
 				問題終於在過年的時候有了解答——「你送我的橘子」<br>
-				吃完你送的橘子後，順手把種子丟進盆栽中，小橘子就這麼誕生了<br>
+				吃完橘子後，順手把種子丟進盆栽中，小橘子就這麼誕生了<br>
 				另外一盆是從我最愛的多肉植物，剪取一部分用仟插法繁殖而成<br>
 				你要好好照顧他們倆，照顧他們就好像在照顧我一樣^_^<br>
 				對了⋯⋯你自己幫他們取名字吧！
@@ -71,7 +71,7 @@
 		</article>
 
 		<!-- Video -->
-		<article id="video" class="panel">
+		<article id="song" class="panel">
 			<div class="embed-responsive embed-responsive-16by9">
 				<iframe src="https://www.youtube.com/embed/kmfvIMic2us?rel=0" frameborder="0" allowfullscreen></iframe>
 			</div>
@@ -92,34 +92,6 @@
 乖乖地    等我回來
 在每個    角落都留下    我們的足跡</pre>
 			</article>
-
-			<article id="blog" class="panel">
-				<header>
-					<h2>告訴我你每天在幹嘛吧！</h2>
-				</header>
-				<form action="#" method="post">
-					<div>
-						<div class="row">
-							<div class="6u 12u$(mobile)">
-								<input type="text" name="name" placeholder="Name" />
-							</div>
-							<div class="6u$ 12u$(mobile)">
-								<input type="text" name="email" placeholder="Email" />
-							</div>
-							<div class="12u$">
-								<input type="text" name="subject" placeholder="Subject" />
-							</div>
-							<div class="12u$">
-								<textarea name="message" placeholder="Message" rows="8"></textarea>
-							</div>
-							<div class="12u$">
-								<input type="submit" value="Send Message" />
-							</div>
-						</div>
-					</div>
-				</form>
-			</article>
-
 		</div>
 
 		<!-- Footer -->
