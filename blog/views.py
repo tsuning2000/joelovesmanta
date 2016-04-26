@@ -3,8 +3,7 @@ from django.utils import timezone
 from .models import Post
 from .forms import PostForm
 from django.shortcuts import redirect
-from django.contrib.auth import authenticate, login
-
+from django.contrib.auth import authenticate,login
 
 def post_list(request):
     user = authenticate(username='Joe', password='cute0131')
