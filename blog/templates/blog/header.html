@@ -6,22 +6,19 @@
 	<meta charset="utf-8" />
 	{% load staticfiles %}
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-
 	<link rel="stylesheet" href="{% static 'personal/css/main.css' %}"/>
 	<noscript><link rel="stylesheet" href="{% static 'personal/css/noscript.css' %}" /></noscript>
-	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
-
+	<body>
 <!-- Wrapper-->
+
 			<div id="wrapper">
-
-				<!-- Nav -->
+				<!-- Nav --> 
 					<nav id="nav">
-						<a href="{% url 'post_list' %}"><span>Home</span></a>
-						<a href="{% url 'post_list' %}"><span>Blog</span></a>
+						<a href="{% url 'index' %}" class="icon fa-home"><span>Home</span></a>
+						{% block nav %}
+						{% endblock %}
 					</nav>
-
 					<!-- Main -->
 					<div id="main">
 						<article id="blog" class="panel">

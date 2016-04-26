@@ -6,163 +6,138 @@
 	<meta charset="utf-8" />
 	{% load staticfiles %}
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-
 	<link rel="stylesheet" href="{% static 'personal/css/main.css' %}"/>
 	<noscript><link rel="stylesheet" href="{% static 'personal/css/noscript.css' %}" /></noscript>
-	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
 
 <!-- Wrapper-->
-			<div id="wrapper">
+<div id="wrapper">
 
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#me" class="icon fa-home active"><span>Home</span></a>
-						<a href="#work" class="icon fa-folder"><span>Work</span></a>
-						<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
-						<a href="{% url 'post_list' %}" class="icon fa-twitter"><span>Blog</span></a>
-					</nav>
+	<!-- Nav -->
+	<nav id="nav">
+		<a href="#me" class="icon fa-home active"><span>Home</span></a>
+		<a href="#tree" class="icon fa-tree"><span>Tree</span></a>
+		<a href="#video" class="icon fa-video-camera"><span>Video</span></a>
+		<a href="{% url 'post_list' %}" class="icon fa-file-text"><span>Blog</span></a>
+	</nav>
 
-				<!-- Main -->
-					<div id="main">
+	<!-- Main -->
+	<div id="main">
 
-						<!-- Me -->
-							<article id="me" class="panel">
-								<header>
-									<h1>蔡祖寧(Joe Tsai)</h1>
-									<p>一個很愛很愛吳順涵的男生</p>
-								</header>
-								<a href="#work" class="jumplink pic">
-									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
-									<img src="{% static 'personal/images/joe.png' %}" alt="" />	
-								</a>
-							</article>
+		<!-- Me -->
+		<article id="me" class="panel">
+			<header>
+				<h1>蔡祖寧(Joe Tsai)</h1>
+				<p>一個很愛很愛吳順涵的男生</p>
+			</header>
+			<a href="#tree" class="jumplink pic">
+				<span class="arrow icon fa-chevron-right"><span>See my tree</span></span>
+				<img src="{% static 'personal/images/joe.png' %}" alt="" />	
+			</a>
+		</article>
 
-						<!-- Work -->
-							<article id="work" class="panel">
-								<header>
-									<h2>Work</h2>
-								</header>
-								<p>
-									一些我們的照片...
-								</p>
-								<section>
-									<div class="row">
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="{% static 'personal/images/pic01.jpg' %}" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="{% static 'personal/images/pic02.jpg' %}" alt=""></a>
-										</div>
-										<div class="4u$ 12u$(mobile)">
-											<a href="#" class="image fit"><img src="{% static 'personal/images/pic03.jpg' %}" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="{% static 'personal/images/pic04.jpg' %}" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="{% static 'personal/images/pic05.jpg' %}" alt=""></a>
-										</div>
-										<div class="4u$ 12u$(mobile)">
-											<a href="#" class="image fit"><img src="{% static 'personal/images/pic06.jpg' %}" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="{% static 'personal/images/pic07.jpg' %}" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="{% static 'personal/images/pic08.jpg' %}" alt=""></a>
-										</div>
-										<div class="4u$ 12u$(mobile)">
-											<a href="#" class="image fit"><img src="{% static 'personal/images/pic09.jpg' %}" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="{% static 'personal/images/pic10.jpg' %}" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="#" class="image fit"><img src="{% static 'personal/images/pic11.jpg' %}" alt=""></a>
-										</div>
-										<div class="4u$ 12u$(mobile)">
-											<a href="#" class="image fit"><img src="{% static 'personal/images/pic12.jpg' %}" alt=""></a>
-										</div>
-									</div>
-								</section>
-							</article>
+		<!-- Tree -->
+		<article id="tree" class="panel">
+			<header>
+				<h2>當小多肉遇上小橘子</h2>
+			</header>
+			<p>
+				4/25（一）<br>
+				晚上我們在慶州館吃飯<br>
+				你問我：「要當兵了，可以留什麼東西給你？」<br>
+				為了不讓你知道我有準備禮物要給你<br>我帥氣地回答：「就上次送你的那隻Chris娃娃啊！」<br>
+				自從知道自己要去當兵了，我就一直在想你今晚問我的問題<br>
+				到底⋯⋯送什麼東西能夠讓你感覺到我就在你身邊？<br>
+				問題終於在過年的時候有了解答——「你送我的橘子」<br>
+				吃完你送的橘子後，順手把種子丟進盆栽中，小橘子就這麼誕生了<br>
+				另外一盆是從我最愛的多肉植物，剪取一部分用仟插法繁殖而成<br>
+				你要好好照顧他們倆，照顧他們就好像在照顧我一樣^_^<br>
+				對了⋯⋯你自己幫他們取名字吧！
 
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Contact Me</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="6u 12u$(mobile)">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="6u$ 12u$(mobile)">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="12u$">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="12u$">
-												<textarea name="message" placeholder="Message" rows="8"></textarea>
-											</div>
-											<div class="12u$">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
-							</article>
-
-							<article id="blog" class="panel">
-								<header>
-									<h2>告訴我你每天在幹嘛吧！</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="6u 12u$(mobile)">
-												<input type="text" name="name" placeholder="Name" />
-											</div>
-											<div class="6u$ 12u$(mobile)">
-												<input type="text" name="email" placeholder="Email" />
-											</div>
-											<div class="12u$">
-												<input type="text" name="subject" placeholder="Subject" />
-											</div>
-											<div class="12u$">
-												<textarea name="message" placeholder="Message" rows="8"></textarea>
-											</div>
-											<div class="12u$">
-												<input type="submit" value="Send Message" />
-											</div>
-										</div>
-									</div>
-								</form>
-							</article>
-
+			</p>
+			<section>
+				<div class="row">
+					<div class="6u 12u$(mobile)">
+						<img src="{% static 'personal/images/succulent.jpg' %}" alt="" class="image fit">
+						<center>小多肉：兩週澆一次水</center>
+					</div>
+					<div class="6u 12u$(mobile)">
+						<img src="{% static 'personal/images/orange.jpg' %}" alt="" class="image fit">
+						<center>小橘子：每天澆水</center>
 					</div>
 
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; Joe</li><li>2016/04/27</li>
-						</ul>
-					</div>
+				</div>
+			</section>
+		</article>
 
+		<!-- Video -->
+		<article id="video" class="panel">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe src="https://www.youtube.com/embed/kmfvIMic2us?rel=0" frameborder="0" allowfullscreen></iframe>
 			</div>
+			<pre>
+				<h2>跟</h2>
+跟	我想要跟你永遠走下去	請你不要嫌棄我愛遲到
+常常生氣	腳上迷人的氣味								
 
-		<!-- Scripts -->
-			<script src="{% static 'personal/js/jquery.min.js' %}"></script>
-			<script src="{% static 'personal/js/skel.min.js' %}"></script>
-			<script src="{% static 'personal/js/skel-viewport.min.js' %}"></script>
-			<script src="{% static 'personal/js/util.js' %}"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="{% static 'personal/js/main.js' %}"></script>
+跟	準備好跟我走下去了嗎	我絕不會嫌棄你愛逛街
+無病呻吟	狂熱的政治份子
 
-	</body>
+台北 	屏東
+路很遠 心卻近
+
+想我	就看看照片
+我就在你身邊	陪著你走
+
+乖乖地    等我回來
+在每個    角落都留下    我們的足跡</pre>
+			</article>
+
+			<article id="blog" class="panel">
+				<header>
+					<h2>告訴我你每天在幹嘛吧！</h2>
+				</header>
+				<form action="#" method="post">
+					<div>
+						<div class="row">
+							<div class="6u 12u$(mobile)">
+								<input type="text" name="name" placeholder="Name" />
+							</div>
+							<div class="6u$ 12u$(mobile)">
+								<input type="text" name="email" placeholder="Email" />
+							</div>
+							<div class="12u$">
+								<input type="text" name="subject" placeholder="Subject" />
+							</div>
+							<div class="12u$">
+								<textarea name="message" placeholder="Message" rows="8"></textarea>
+							</div>
+							<div class="12u$">
+								<input type="submit" value="Send Message" />
+							</div>
+						</div>
+					</div>
+				</form>
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<div id="footer">
+			<ul class="copyright">
+				<li>&copy; Joe</li><li>2016/04/27</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="{% static 'personal/js/jquery.min.js' %}"></script>
+	<script src="{% static 'personal/js/skel.min.js' %}"></script>
+	<script src="{% static 'personal/js/skel-viewport.min.js' %}"></script>
+	<script src="{% static 'personal/js/util.js' %}"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="{% static 'personal/js/main.js' %}"></script>
+</body>
 
 </html>

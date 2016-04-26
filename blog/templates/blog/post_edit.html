@@ -1,0 +1,19 @@
+{% extends 'blog/header.html' %}
+
+{% block nav %}
+<a href="{% url 'post_list' %}" class="icon fa-file-text"><span>Blog</span></a>
+{% if edit_list.1 == -1 %}
+<a href="" method="POST" class="icon fa-pencil active"><span>Post</span></a>
+{% else %}
+<a href="{% url 'post_detail' pk=edit_list.1 %}" method="POST" class="icon fa-pencil active"><span>Post</span></a>
+{% endif %}
+
+{% endblock %}
+
+{% block content %}
+<h1>新的日記</h1>
+<form method="POST" class="post-form">{% csrf_token %}
+	{{ edit_list.0.as_p }}
+	<button type="submit" class="save btn btn-default">Save</button>
+</form>
+{% endblock %}
